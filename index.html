@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals of the Appalachian Mountains</title>
+</head>
+
+<style>
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    
+  }
+
+  .logo{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+  }
+  .nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+  }
+
+  .nav-links li{
+    list-style: none;
+  }
+
+  .nav-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+    body{
+        background-image: url(images/early\ morning\ elk.jpg);
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    p {
+        font-family:'Times New Roman', Times, serif;
+        color: white;
+        font-size: 40px;
+        text-align: space;
+        text-align: center;
+    }
+
+    .burger{
+      display: none;
+      cursor: pointer;
+    }
+
+    .burger{
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width:1024px){
+      .nav-links{
+        width: 60%;
+      }
+    }
+
+
+    @media screen and (max-width:768px){
+      body{
+        overflow-x: hidden;
+      }
+      .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+      }
+      .nav-links li{
+        opacity: 0;
+      }
+      .burger{
+        display: block;
+      }
+    }
+
+</style>
+<body>
+  <header>
+  <nav>
+    <div class="logo">
+      <h4>Appalachian Animals</h4>
+    </div>
+    <ul class="nav-links">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blackbear.html">Black Bear</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="whitetaileddeer.html">White-Tailed Deer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="redfox.html">Red Fox</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="grayfox.html">Gray Fox</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="wildturkeys.html">Wild Turkeys</a>
+          </li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      </nav>
+      </header>
+    <p>
+        <br><br><br><br><br> The Appalachian Mountains are home to a diverse array of wildlife, making them a haven for nature enthusiasts and wildlife enthusiasts alike. 
+        These ancient mountains, stretching from the southeastern United States up into Canada, provide a rich and varied habitat for a wide range of animals. 
+        Among the many creatures that call the Appalachians home are black bears, white-tailed deer, red and gray foxes, wild turkeys, and an assortment of songbirds. 
+        Additionally, the cool, shaded forests and pristine streams of the region provide ideal conditions for salamanders, including the striking Eastern Hellbender. 
+        The Appalachian Mountains offer an ecological tapestry that showcases the resilience and adaptability of its inhabitants, painting a vibrant portrait of biodiversity in a rugged, natural setting.
+    </p>
+</body>
+</html>
